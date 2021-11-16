@@ -11,7 +11,7 @@ import { VscTerminalLinux } from "react-icons/vsc";
 
 const Software = () => {
   return (
-    <Box ml={20}>
+    <Box ml={{ base: 0, md: 20 }}>
       <Text
         display="flex"
         alignItems="center"
@@ -20,7 +20,7 @@ const Software = () => {
       >
         <Icon as={MdSettings} m={3} /> Software
       </Text>
-      <UnorderedList listStyleType="none" spacing={3}>
+      <UnorderedList listStyleType="none" spacing={3} ml={10}>
         <ListItem>
           <Icon as={SiVisualstudiocode} fontSize="1.2rem" mr={2} /> Visual
           studio code
