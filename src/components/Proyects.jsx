@@ -14,7 +14,6 @@ const Proyects = () => {
     const url = "https://api.github.com/users/LautaAndreani/repos";
     const getData = await fetch(url);
     const dataToJson = await getData.json();
-    // setTimeout(() => {}, 3000);
     setData(dataToJson);
   };
 
