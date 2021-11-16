@@ -1,10 +1,10 @@
 import { Text, Box, Badge, Button, Flex, Link } from "@chakra-ui/react";
 import { BsGithub } from "react-icons/bs";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 // import { photo } from "../assets/{project.name}.png";
 
 const Proyecto = ({ project }) => {
-  console.log(project);
   const { topics } = project;
   return project.name === "LautaAndreani" ||
     project.name === "Portfolioweb" ? null : (
@@ -30,6 +30,7 @@ const Proyecto = ({ project }) => {
           {topics.map((tech) => {
             return (
               <Badge
+                key={uuidv4()}
                 m={1}
                 mt={2}
                 fontSize={11}
