@@ -79,7 +79,7 @@ const Proyecto = ({ project }) => {
           <Button
             size="sm"
             ml={2}
-            colorScheme="whiteAlpha"
+            colorScheme="white"
             variant="outline"
             rightIcon={<FaExternalLinkAlt size={12} />}
           >

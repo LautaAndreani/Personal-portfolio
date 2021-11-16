@@ -12,7 +12,12 @@ function App() {
   return (
     <>
       <Nav />
-      <Box className="container" as="main" w="60rem" m="0 auto">
+      <Box
+        className="container"
+        as="main"
+        w={{ base: "100%", md: "50%" }}
+        m="0 auto"
+      >
         <Gif />
         <AboutMe />
         <Proyects />

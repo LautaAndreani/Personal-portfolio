@@ -13,7 +13,6 @@ const AboutMe = () => {
         borderRadius="5px"
         m="0 auto"
         flexWrap="wrap"
-        height="10rem"
       >
         <Box>
           <Text as="h1" fontFamily="Nunito" fontWeight="bold" fontSize="2rem">
@@ -31,6 +30,7 @@ const AboutMe = () => {
             border="2px solid #4787E6"
             padding="2px"
             background="none"
+            mt={{ base: 2, md: 0 }}
           />
         </Box>
       </Flex>
@@ -42,7 +42,7 @@ const AboutMe = () => {
         <Text
           mt="2rem"
           fontFamily="Open Sans"
-          fontWeight="600"
+          fontWeight="400"
           className="aboutMe-content"
         >
           Actualmente tengo 21 años, estudio{" "}
