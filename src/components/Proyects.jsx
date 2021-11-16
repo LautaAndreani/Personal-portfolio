@@ -17,9 +17,14 @@ const Proyects = () => {
     setData(dataToJson);
   };
 
+  const filterProject = data.filter(
+    (project) =>
+      project.name !== "Dronenatic-web" && project.name !== "Personal-portfolio"
+  );
+
   return (
     <>
-      {data === "" ? (
+      {filterProject.length === 0 ? (
         <Center>
           <Spinner />
         </Center>
@@ -34,7 +39,7 @@ const Proyects = () => {
             flexWrap="wrap"
             flexDirection={{ base: "column", md: "row" }}
           >
-            {data.map((project) => {
+            {filterProject.map((project) => {
               return <Proyecto key={project.id} project={project} />;
             })}
           </Flex>

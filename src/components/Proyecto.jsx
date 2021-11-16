@@ -21,7 +21,17 @@ const Proyecto = ({ project }) => {
     >
       <Box>
         <Text as="h3" fontSize="1.3rem" fontFamily="Nunito">
-          {project.name}
+          {project.name === "Discord-chat" ? (
+            <Box fontFamily="Nunito">
+              {project.name}
+              <Badge ml={2} colorScheme="teal">
+                {" "}
+                Nuevo
+              </Badge>
+            </Box>
+          ) : (
+            project.name
+          )}
         </Text>
         <Text mt={3} fontSize=".9rem">
           {project.description}

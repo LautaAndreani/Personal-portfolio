@@ -1,5 +1,5 @@
 import { Flex, Box, Text, Avatar } from "@chakra-ui/react";
-import avatar from "../assets/profile.png";
+import avatar from "../assets/profile-min.png";
 
 const AboutMe = () => {
   return (
