@@ -65,6 +65,7 @@ const Proyects = () => {
               <Button
                 colorScheme="blue"
                 bg="brand.nav"
+                color="#dedede"
                 _hover={{ bg: "brand.title" }}
                 mt={7}
                 size="md"
