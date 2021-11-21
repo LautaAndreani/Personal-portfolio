@@ -1,6 +1,16 @@
 import { useState, useEffect } from "react";
-import { Box, Text, Icon, Flex, Spinner, Center } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Icon,
+  Flex,
+  Spinner,
+  Center,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import { BsGithub } from "react-icons/bs";
+import { HiExternalLink } from "react-icons/hi";
 import Proyecto from "./Proyecto";
 
 const Proyects = () => {
@@ -19,7 +29,9 @@ const Proyects = () => {
 
   const filterProject = data.filter(
     (project) =>
-      project.name !== "Dronenatic-web" && project.name !== "Personal-portfolio"
+      project.name !== "Dronenatic-web" &&
+      project.name !== "Personal-portfolio" &&
+      project.name !== "Tip-calculator"
   );
 
   return (
@@ -43,6 +55,25 @@ const Proyects = () => {
               return <Proyecto key={project.id} project={project} />;
             })}
           </Flex>
+          <Box w={"88%"} textAlign="center">
+            <Link
+              _hover=""
+              href="https://github.com/LautaAndreani"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <Button
+                colorScheme="blue"
+                bg="brand.nav"
+                _hover={{ bg: "brand.title" }}
+                mt={7}
+                size="md"
+                rightIcon={<HiExternalLink />}
+              >
+                Ver más
+              </Button>
+            </Link>
+          </Box>
         </Box>
       )}
     </>

@@ -48,9 +48,9 @@ const AboutMe = () => {
           Actualmente tengo 21 años, estudio{" "}
           <span className="bolder-font">desarrollo frontend</span> y en estos
           momentos me encuentro ampliando mis conocimientos en el mundo de
-          <span className="reactJs"> ReactJs</span>. Intento crear proyectos con
-          cada tecnología nueva que aprendo, disfruto mucho los desafíos y el
-          formarme constantemente.
+          <span className="reactJs"> ReactJs </span> y Typescript. Intento crear
+          proyectos con cada tecnología nueva que aprendo, me gustan los
+          desafíos y el formarme constantemente.
         </Text>
       </Box>
     </>
